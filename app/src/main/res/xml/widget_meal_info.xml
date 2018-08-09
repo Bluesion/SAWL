@@ -1,0 +1,7 @@
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialLayout="@layout/widget_meal"
+    android:minHeight="146dp"
+    android:minWidth="146dp"
+    android:previewImage="@drawable/widget_meal_preview"
+    android:resizeMode="horizontal|vertical"
+    android:updatePeriodMillis="21600000"/>

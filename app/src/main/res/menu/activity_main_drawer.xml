@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/fragment_main"
+            android:icon="@drawable/nav_information"
+            android:checked="true"
+            android:title="모아보기" />
+        <item
+            android:id="@+id/fragment_meal"
+            android:icon="@drawable/nav_meal"
+            android:title="급식" />
+        <item
+            android:id="@+id/fragment_timetable"
+            android:icon="@drawable/nav_timetable"
+            android:title="시간표" />
+        <item
+            android:id="@+id/fragment_schedule"
+            android:icon="@drawable/nav_schedule"
+            android:title="학사 일정" />
+        <item
+            android:id="@+id/fragment_homepage"
+            android:icon="@drawable/nav_homepage"
+            android:title="학교 공지사항" />
+        <item
+            android:id="@+id/fragment_quickconnect"
+            android:icon="@drawable/nav_quickconnect"
+            android:title="퀵커넥트" />
+    </group>
+    <item android:title="유틸리티">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/fragment_card"
+                    android:icon="@drawable/nav_card"
+                    android:title="교통카드 잔액 조회" />
+                <item
+                    android:id="@+id/fragment_memo"
+                    android:icon="@drawable/nav_memo"
+                    android:title="메모" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="애플리케이션">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/fragment_settings"
+                    android:icon="@drawable/nav_settings"
+                    android:title="설정" />
+            </group>
+        </menu>
+    </item>
+</menu>

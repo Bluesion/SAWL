@@ -1,0 +1,28 @@
+<android.support.v7.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.preference.PreferenceCategory android:title="설정">
+        <Preference
+            android:title="앱 세부 설정"
+            android:summary="테마, 데이터 세이버 등 앱의 설정을 변경합니다."
+            android:key="detail" />
+    </android.support.v7.preference.PreferenceCategory>
+
+    <android.support.v7.preference.PreferenceCategory android:title="정보">
+        <Preference
+            android:title="공지사항"
+            android:summary="최신 공지 및 안내 사항을 확인합니다."
+            android:key="notice" />
+        <Preference
+            android:title="앱 정보"
+            android:summary="앱의 자세한 정보를 확인합니다."
+            android:key="about" />
+    </android.support.v7.preference.PreferenceCategory>
+
+    <android.support.v7.preference.PreferenceCategory android:title="유틸리티">
+        <Preference
+            android:title="개발자에게 메일 보내기"
+            android:summary="앱 개발자에게 메일을 보냅니다."
+            android:key="mail" />
+    </android.support.v7.preference.PreferenceCategory>
+
+</android.support.v7.preference.PreferenceScreen>

@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/refresh"
+        android:title="새로고침"
+        android:icon="@drawable/ic_refresh" />
+
+    <item android:id="@+id/date"
+        android:title="날짜 설정"
+        android:icon="@drawable/ic_today" />
+
+    <item android:id="@+id/alergy"
+        android:title="알레르기 정보"
+        android:icon="@drawable/ic_check" />
+
+</menu>

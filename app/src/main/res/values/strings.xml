@@ -1,0 +1,17 @@
+<resources>
+    <!-- 기본 -->
+    <string name="app_name">SAWL</string>
+    <string name="license"><u>오픈소스 라이선스</u></string>
+    <!-- 급식 -->
+    <string name="alergy_text">1. 난류 (달걀)\n2. 우유\n3. 메밀\n4. 땅콩\n5. 대두\n6. 밀\n7. 고등어\n8. 게
+        \n9. 새우\n10. 돼지고기\n11. 복숭아\n12. 토마토\n13. 아황산염\n14. 호두\n15. 닭고기\n16. 소고기\n17. 오징어\n18. 조개류(전복, 홍합 등)</string>
+    <string name="today_breakfast">오늘의 아침</string>
+    <string name="today_lunch">오늘의 점심</string>
+    <string name="today_dinner">오늘의 저녁</string>
+    <string name="no_data_breakfast">아침이 없습니다</string>
+    <string name="no_data_lunch">점심이 없습니다</string>
+    <string name="no_data_dinner">저녁이 없습니다</string>
+    <string name="no_data_title">정보 없음</string>
+    <string name="no_data_message">정보가 없습니다</string>
+    <string name="no_message"> </string>
+</resources>
