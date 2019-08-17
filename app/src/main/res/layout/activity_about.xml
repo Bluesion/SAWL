@@ -1,23 +1,24 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
         app:navigationIcon="?attr/homeAsUpIndicator" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
         android:layout_margin="8dp"
         android:orientation="vertical">
 
-        <android.support.v7.widget.AppCompatImageView
+        <ImageView
             android:layout_width="72dp"
             android:layout_height="72dp"
             android:layout_gravity="center"
@@ -30,13 +31,13 @@
             android:gravity="center"
             android:orientation="horizontal">
 
-            <android.support.v7.widget.AppCompatTextView
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="현재 앱 버전: "
+                android:text="@string/current_app_version"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
 
-            <android.support.v7.widget.AppCompatTextView
+            <TextView
                 android:id="@+id/currentVersion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -51,47 +52,48 @@
             android:gravity="center"
             android:orientation="horizontal">
 
-            <android.support.v7.widget.AppCompatTextView
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="최신 앱 버전: "
+                android:text="@string/latest_app_version"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
 
-            <android.support.v7.widget.AppCompatTextView
+            <TextView
                 android:id="@+id/latestVersion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="정보를 불러오는 중입니다"
+                android:text="@string/loading"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
 
         </LinearLayout>
 
-        <android.support.v7.widget.AppCompatTextView
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:gravity="center"
-            android:text="최신 버전의 앱을 사용하지 않는 경우 아래 버튼을 클릭하여 업데이트를 꼭 해주세요."
+            android:text="@string/about_message"
             android:textAppearance="?android:attr/textAppearanceSmall" />
 
-        <android.support.v7.widget.AppCompatButton
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/update"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="8dp"
-            android:text="업데이트" />
-
-        <android.support.v7.widget.AppCompatButton
-            android:id="@+id/license"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/transparent"
-            android:layout_gravity="bottom|center"
-            android:gravity="bottom|center"
-            android:text="@string/license"
-            android:textAppearance="?android:attr/textAppearanceSmall" />
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:text="@string/update" />
 
     </LinearLayout>
 
-</LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/license"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:text="@string/license_underline"
+        style="@style/Widget.MaterialComponents.Button.TextButton" />
+
+</RelativeLayout>

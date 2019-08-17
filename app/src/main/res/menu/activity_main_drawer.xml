@@ -3,51 +3,69 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/fragment_main"
-            android:icon="@drawable/nav_information"
+            android:icon="@drawable/nav_main"
             android:checked="true"
-            android:title="모아보기" />
+            android:title="@string/nav_1" />
         <item
             android:id="@+id/fragment_meal"
             android:icon="@drawable/nav_meal"
-            android:title="급식" />
+            android:title="@string/nav_2" />
         <item
             android:id="@+id/fragment_timetable"
             android:icon="@drawable/nav_timetable"
-            android:title="시간표" />
+            android:title="@string/nav_3" />
         <item
             android:id="@+id/fragment_schedule"
             android:icon="@drawable/nav_schedule"
-            android:title="학사 일정" />
+            android:title="@string/nav_4" />
         <item
             android:id="@+id/fragment_homepage"
             android:icon="@drawable/nav_homepage"
-            android:title="학교 공지사항" />
+            android:title="@string/nav_5" />
         <item
             android:id="@+id/fragment_quickconnect"
             android:icon="@drawable/nav_quickconnect"
-            android:title="퀵커넥트" />
+            android:title="@string/nav_6" />
     </group>
-    <item android:title="유틸리티">
+    <item android:title="@string/nav_divider_1">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/fragment_clock"
+                    android:icon="@drawable/nav_clock"
+                    android:title="@string/nav_7" />
+                <item
+                    android:id="@+id/fragment_test"
+                    android:icon="@drawable/nav_test"
+                    android:title="@string/nav_8" />
+                <item
+                    android:id="@+id/fragment_ruler"
+                    android:icon="@drawable/nav_ruler"
+                    android:title="@string/nav_9" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="@string/nav_divider_2">
         <menu>
             <group android:checkableBehavior="single">
                 <item
                     android:id="@+id/fragment_card"
                     android:icon="@drawable/nav_card"
-                    android:title="교통카드 잔액 조회" />
+                    android:title="@string/nav_10" />
                 <item
-                    android:id="@+id/fragment_memo"
-                    android:icon="@drawable/nav_memo"
-                    android:title="메모" />
+                    android:id="@+id/fragment_reminder"
+                    android:icon="@drawable/nav_reminder"
+                    android:title="@string/nav_11" />
             </group>
         </menu>
     </item>
-    <item android:title="애플리케이션">
+    <item android:title="@string/nav_divider_3">
         <menu>
             <group android:checkableBehavior="single">
                 <item
                     android:id="@+id/fragment_settings"
                     android:icon="@drawable/nav_settings"
-                    android:title="설정" />
+                    android:title="@string/nav_12" />
             </group>
         </menu>
     </item>

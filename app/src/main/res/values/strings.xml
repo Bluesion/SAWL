@@ -1,17 +1,164 @@
 <resources>
     <!-- 기본 -->
-    <string name="app_name">SAWL</string>
-    <string name="license"><u>오픈소스 라이선스</u></string>
+    <string name="app_name" translatable="false">SAWL</string>
+    <string name="homepage" translatable="false">%1$s · %2$s</string>
+    <string name="nav_1">Main</string>
+    <string name="nav_2">Meal</string>
+    <string name="nav_3">Timetable</string>
+    <string name="nav_4">Schedule</string>
+    <string name="nav_5">Homepage</string>
+    <string name="nav_6">Quick Connect</string>
+    <string name="nav_7">Clock</string>
+    <string name="nav_8">Test Result</string>
+    <string name="nav_9">Ruler</string>
+    <string name="nav_10">Transportation Card</string>
+    <string name="nav_11">Reminder</string>
+    <string name="nav_12">Settings</string>
+    <string name="nav_divider_1">Study Assistant</string>
+    <string name="nav_divider_2">Utility</string>
+    <string name="nav_divider_3">Application</string>
+    <string name="today_meal">Today\'s meal</string>
+    <string name="today_timetable">Today\'s timetable</string>
+
+    <!-- 메인 -->
+    <string name="weather_temperature">Temperature\u0020</string>
+    <string name="weather_dust">Fine dust\u0020</string>
+    <string name="weather_no_internet">Cannot load\nweather condition</string>
+    <string name="test">2020 CSAT\u0020</string>
+    <string name="day" translatable="false">D</string>
+
+    <!-- 메인 시간표 -->
+    <string name="no_timetable">No class today</string>
+    <string name="main_class_1">1st class:\u0020</string>
+    <string name="main_class_2">2nd class:\u0020</string>
+    <string name="main_class_3">3rd class:\u0020</string>
+    <string name="main_class_4">4th class:\u0020</string>
+    <string name="main_class_5">5th class:\u0020</string>
+    <string name="main_class_6">6th class:\u0020</string>
+    <string name="main_class_7">7th class:\u0020</string>
+    <string name="main_class_8">8th class:\u0020</string>
+
+    <!-- 공통 -->
+    <string name="info">Information</string>
+
     <!-- 급식 -->
-    <string name="alergy_text">1. 난류 (달걀)\n2. 우유\n3. 메밀\n4. 땅콩\n5. 대두\n6. 밀\n7. 고등어\n8. 게
-        \n9. 새우\n10. 돼지고기\n11. 복숭아\n12. 토마토\n13. 아황산염\n14. 호두\n15. 닭고기\n16. 소고기\n17. 오징어\n18. 조개류(전복, 홍합 등)</string>
-    <string name="today_breakfast">오늘의 아침</string>
-    <string name="today_lunch">오늘의 점심</string>
-    <string name="today_dinner">오늘의 저녁</string>
-    <string name="no_data_breakfast">아침이 없습니다</string>
-    <string name="no_data_lunch">점심이 없습니다</string>
-    <string name="no_data_dinner">저녁이 없습니다</string>
-    <string name="no_data_title">정보 없음</string>
-    <string name="no_data_message">정보가 없습니다</string>
-    <string name="no_message"> </string>
+    <string name="allergy_title">Allergy info</string>
+    <string name="allergy_text">1. Eggs\n2. Milk\n3. Buckwheat\n4. Peanut\n5. Soybean\n6. Wheat\n7. Mackerel\n8. Crab
+        \n9. Shrimp\n10. Pork\n11. Peach\n12. Tomato\n13. Sodium sulfite\n14. Walnut\n15. Chicken\n16. Beef\n17. Squid\n18. Clams</string>
+    <string name="no_data_breakfast">No breakfast</string>
+    <string name="no_data_lunch">No lunch</string>
+    <string name="no_data_dinner">No dinner</string>
+    <string name="no_data_title">No data</string>
+    <string name="no_data_message">Sorry, there is no data</string>
+    <string name="no_message" translatable="false">\u0020</string>
+    <string name="refresh_title">Error</string>
+    <string name="refresh_text">Please check your network</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="lunch">Lunch</string>
+    <string name="dinner">Dinner</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_date">Set date</string>
+    <string name="menu_allergy">Allergy info</string>
+
+    <!-- 시간표 -->
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+
+    <!-- 학사일정 -->
+    <string name="dialog_text">1. This schedule data is based on school homepage data. Schedule can be changed anytime without notice.\n\n
+                        2. Some schedules are not written in here because they are not useful data for students.\n\n
+                        3. Only Go-Home-fridays are written here (Stay fridays are not written here). If you want more detail friday data, ask to dormitory officer.</string>
+    <string name="month1">January, 2019</string>
+    <string name="month2">February, 2019</string>
+    <string name="month3">March</string>
+    <string name="month4">April</string>
+    <string name="month5">May</string>
+    <string name="month6">June</string>
+    <string name="month7">July</string>
+    <string name="month8">August</string>
+    <string name="month9">September</string>
+    <string name="month10">October</string>
+    <string name="month11">November</string>
+    <string name="month12">December</string>
+    <string name="snackbar_today">It\'s today\'s schedule.</string>
+    <string name="snackbar_past1">It\'s\u0020</string>
+    <string name="snackbar_past2">day(s) before today.</string>
+    <string name="snackbar_future1">It\'s\u0020</string>
+    <string name="snackbar_future2">days(s) after today.</string>
+
+    <!-- 홈페이지 -->
+    <string name="attachment">Attachment</string>
+    <string name="notice">Notice</string>
+    <string name="parent">Parent notice</string>
+    <string name="toolbar_go">Go to website</string>
+
+    <!-- 시계 -->
+    <string name="timer">Timer</string>
+    <string name="stopwatch">Stopwatch</string>
+    <string name="button_start">Start</string>
+    <string name="button_stop">Stop</string>
+    <string name="button_resume">Resume</string>
+    <string name="button_reset">Reset</string>
+    <string name="default_time_timer" translatable="false">00:00:00</string>
+    <string name="default_time_stopwatch" translatable="false">0:00</string>
+    <string name="timer_0" translatable="false">0</string>
+    <string name="timer_1" translatable="false">1</string>
+    <string name="timer_2" translatable="false">2</string>
+    <string name="timer_3" translatable="false">3</string>
+    <string name="timer_4" translatable="false">4</string>
+    <string name="timer_5" translatable="false">5</string>
+    <string name="timer_6" translatable="false">6</string>
+    <string name="timer_7" translatable="false">7</string>
+    <string name="timer_8" translatable="false">8</string>
+    <string name="timer_9" translatable="false">9</string>
+    <string name="time_too_long_warning">Time input limit reached</string>
+    <string name="hour">hour</string>
+    <string name="hours">hours</string>
+    <string name="minute">minute</string>
+    <string name="minutes">minutes</string>
+    <string name="second">second</string>
+    <string name="seconds">seconds</string>
+    <string name="remaining">remaining</string>
+    <string name="notification_done_text">Timer has finished!</string>
+
+    <!-- 성적표 -->
+
+
+    <!-- 교통카드 -->
+    <string name="card_message_1">NFC should be turned on to check how much money is in the card.\nTo turn on NFC, please press button below.</string>
+    <string name="card_message_2">Please scan your transportation card to back of your device.</string>
+    <string name="card_text">This function only works with T-Money &amp; CashBee transportation card.</string>
+    <string name="tmoney">T-Money</string>
+    <string name="cashbee">CashBee</string>
+    <string name="unknown">Unknown card</string>
+    <string name="unsupport">Unsupported card</string>
+    <string name="wait">Please wait a minute with your card attached to the phone.</string>
+    <string name="format">%sWon</string>
+    <string name="nfc">NFC setting</string>
+
+    <!-- 리마인더 -->
+
+    <!-- 설정 -->
+    <string name="app_settings">App setting</string>
+    <string name="theme_title">Dark Theme</string>
+    <string name="theme_text">You can check out dark SAWL theme.</string>
+    <string name="saver_title">Data Saver</string>
+    <string name="saver_text">Load weather information only when device is connected to Wi-Fi.</string>
+
+    <!-- 정보 -->
+    <string name="about_title">About</string>
+    <string name="about_text">Check SAWL application more and more.</string>
+    <string name="current_app_version">Current app version:\u0020</string>
+    <string name="latest_app_version">Latest app version:\u0020</string>
+    <string name="loading">Loading</string>
+    <string name="about_message">If you are not using latest version, please update.</string>
+    <string name="update">Update</string>
+    <string name="license">License</string>
+    <string name="license_underline"><u>License</u></string>
+
+    <!-- 위젯 -->
+    <string name="csat">CSAT counter</string>
 </resources>

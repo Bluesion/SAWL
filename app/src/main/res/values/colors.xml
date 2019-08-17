@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#013e7f</color>
-    <color name="colorPrimaryDark">#013e7f</color>
     <color name="colorAccent">#4d95e3</color>
-    <color name="colorSecondaryText">#727272</color>
     <color name="refresh_blue">#529ecc</color>
     <color name="refresh_green">#56bc8a</color>
     <color name="refresh_purple">#a77dc2</color>
     <color name="refresh_red">#d95e40</color>
-    <color name="transparent">#00ffffff</color>
-    <color name="tabWhite">#e6e6e6</color>
-    <color name="tabDark">#303030</color>
+    <color name="schedule_normal_text">#727272</color>
 </resources>

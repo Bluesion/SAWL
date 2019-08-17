@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="D-"
+        android:text="@string/day"
         android:textColor="#ff000000"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 

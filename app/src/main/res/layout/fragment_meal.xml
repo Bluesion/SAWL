@@ -1,35 +1,30 @@
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mSwipeRefreshLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <android.support.v4.widget.SwipeRefreshLayout
-        android:id="@+id/mSwipeRefreshLayout"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:layout_margin="4dp">
+        android:layout_height="match_parent">
 
-        <android.support.v7.widget.RecyclerView
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mRecyclerView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/recycler" />
+            android:layout_height="0dp"
+            android:paddingBottom="?attr/actionBarSize"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
-    </android.support.v4.widget.SwipeRefreshLayout>
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/mTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
 
-    <com.leinardi.android.speeddial.SpeedDialOverlayLayout
-        android:id="@+id/overlay"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <com.leinardi.android.speeddial.SpeedDialView
-        android:id="@+id/speedDial"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        app:layout_behavior="@string/speeddial_scrolling_view_snackbar_behavior"
-        app:sdMainFabClosedSrc="@drawable/ic_add" />
-
-</android.support.design.widget.CoordinatorLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

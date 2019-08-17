@@ -19,7 +19,7 @@
             android:layout_centerVertical="true"
             android:layout_marginStart="8dp"
             android:id="@+id/text"
-            android:text="오늘의 급식" />
+            android:text="@string/today_meal" />
 
         <ImageButton
             android:layout_width="wrap_content"

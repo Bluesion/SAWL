@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/timerValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="70sp"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="monospace"
+            android:text="@string/default_time_timer" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/timer_1"
+                    android:text="@string/timer_1"
+                    style="@style/TimerButton" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/timer_2"
+                    android:text="@string/timer_2"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    style="@style/TimerButton" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/timer_3"
+                    android:text="@string/timer_3"
+                    style="@style/TimerButton" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/timer_4"
+                    android:text="@string/timer_4"
+                    style="@style/TimerButton" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/timer_5"
+                    android:text="@string/timer_5"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    style="@style/TimerButton" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/timer_6"
+                    android:text="@string/timer_6"
+                    style="@style/TimerButton" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/timer_7"
+                    android:text="@string/timer_7"
+                    style="@style/TimerButton" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/timer_8"
+                    android:text="@string/timer_8"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    style="@style/TimerButton" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/timer_9"
+                    android:text="@string/timer_9"
+                    style="@style/TimerButton" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.google.android.material.button.MaterialButton
+                    android:visibility="invisible"
+                    style="@style/TimerButton" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/timer_0"
+                    android:text="@string/timer_0"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    style="@style/TimerButton" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:visibility="invisible"
+                    style="@style/TimerButton" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/startButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_ripple"
+            android:text="@string/button_start"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pauseButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="@string/button_stop"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:visibility="gone" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/continueButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_ripple"
+            android:text="@string/button_resume"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:visibility="gone" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/resetButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="@string/button_reset"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</RelativeLayout>

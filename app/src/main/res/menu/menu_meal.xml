@@ -1,15 +1,16 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item android:id="@+id/refresh"
-        android:title="새로고침"
-        android:icon="@drawable/ic_refresh" />
+        android:title="@string/menu_refresh"
+        app:showAsAction="never" />
 
     <item android:id="@+id/date"
-        android:title="날짜 설정"
-        android:icon="@drawable/ic_today" />
+        android:title="@string/menu_date"
+        app:showAsAction="never" />
 
-    <item android:id="@+id/alergy"
-        android:title="알레르기 정보"
-        android:icon="@drawable/ic_check" />
+    <item android:id="@+id/allergy"
+        android:title="@string/menu_allergy"
+        app:showAsAction="never" />
 
 </menu>
